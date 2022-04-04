@@ -19,10 +19,6 @@ section.history article h1 {
     font-size: 1.6em;
 }
 
-section.history article p {
-    text-indent: 34px;
-}
-
 section.history article hr {
     margin: 0;
     background-color: #0e7e4f;
