@@ -18,12 +18,3 @@ section.history article {
 section.history article h1 {
     font-size: 1.6em;
 }
-
-section.history article hr {
-    margin: 0;
-    background-color: #0e7e4f;
-    width: 100%;
-    height: 4px;
-    border: none;
-    border-radius: 4px;
-}

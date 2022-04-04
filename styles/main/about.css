@@ -36,11 +36,16 @@ section.about div.upper img {
 
 section.about div.lower {
     width : 80%;
-    margin: 46px auto 0;
+    margin: 0 auto;
+}
+
+section.about hr {
+    margin: 46px auto;
 }
 
 section.about div.lower ul {
     list-style-type: disc;
+    margin-top: 46px;
 }
 
 section.about div.lower li {
