@@ -1,7 +1,7 @@
-@import url(side/root.css);
-@import url(side/header.css);
-@import url(side/banner.css);
-@import url(side/footer.css);
+@import url(../side/root.css);
+@import url(../side/header.css);
+@import url(../side/banner.css);
+@import url(../side/footer.css);
 
 /* Info Section */
 
