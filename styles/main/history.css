@@ -1,0 +1,33 @@
+@import url(side/root.css);
+@import url(side/header.css);
+@import url(side/banner.css);
+@import url(side/footer.css);
+
+/* History Section */
+
+section.history {
+    padding: 96px 256px;
+}
+
+section.history article {
+    display       : flex;
+    flex-direction: column;
+    gap           : 34px;
+}
+
+section.history article h1 {
+    font-size: 1.6em;
+}
+
+section.history article p {
+    text-indent: 34px;
+}
+
+section.history article hr {
+    margin: 0;
+    background-color: #0e7e4f;
+    width: 100%;
+    height: 4px;
+    border: none;
+    border-radius: 4px;
+}

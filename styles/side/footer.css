@@ -1,0 +1,106 @@
+/* Footer */
+
+footer {
+    background-color: #0e7e4f;
+    color           : whitesmoke;
+    padding         : 24px 256px;
+    display         : flex;
+    justify-content : space-between;
+    font-size       : 0.8em;
+}
+
+footer div {
+    flex-basis: 30%;
+}
+
+footer hr {
+    background-color: whitesmoke;
+    border          : 1px solid whitesmoke;
+    border-radius   : 2px;
+}
+
+footer ul {
+    display       : flex;
+    flex-direction: column;
+    gap           : 12px;
+}
+
+footer ul a {
+    color          : whitesmoke;
+    text-decoration: none;
+}
+
+footer ul li {
+    transition: all 60ms linear;
+}
+
+footer ul li:hover:not(div.social li) {
+    padding-left: 4px;
+}
+
+footer div.social {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+}
+
+footer div.social ul {
+    flex-direction : row;
+    justify-content: space-around;
+}
+
+footer div.social i:not(div.toggle i) {
+    font-size : 2em;
+    transition: all 60ms linear;
+}
+
+footer div.social i:hover:not(div.toggle i) {
+    color: #454545;
+}
+
+footer div.social p {
+    text-align: center;
+}
+
+/* Dark Theme Toggle */
+
+footer div.toggle {
+    position  : relative;
+    align-self: center;
+}
+
+footer div.toggle input {
+    position: absolute;
+    top     : 4px;
+    left    : 22px;
+    opacity : 0%;
+}
+
+footer div.toggle label {
+    background-color: #454545;
+    padding         : 6px 8px;
+    width           : 45px;
+    height          : 15px;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    position        : relative;
+    border-radius   : 50px;
+    cursor          : pointer;
+    transform       : scale(1.2);
+}
+
+footer div.toggle div.ball {
+    background-color: whitesmoke;
+    width           : 26px;
+    height          : 22px;
+    position        : absolute;
+    top             : 2px;
+    left            : 4px;
+    border-radius   : 50px;
+    transition      : all 200ms ease-out;
+}
+
+footer div.toggle input:checked+label div.ball {
+    transform: translateX(28px);
+}

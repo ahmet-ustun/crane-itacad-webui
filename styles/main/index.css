@@ -1,0 +1,18 @@
+@import url(side/root.css);
+@import url(side/header.css);
+@import url(side/banner.css);
+@import url(side/footer.css);
+
+/* Info Section */
+
+section.information {
+    padding: 96px 256px;
+    display: flex;
+    gap    : 96px;
+}
+
+section.information article {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+}

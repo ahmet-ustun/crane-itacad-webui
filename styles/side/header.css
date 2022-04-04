@@ -1,0 +1,104 @@
+/* Header */
+
+header {
+    background-color: #0e7e4f;
+    padding         : 24px 256px;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+
+/* Logo Styling */
+
+div.logo a {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 12px;
+    text-decoration: none;
+}
+
+div.logo span {
+    margin-top : 6px;
+    font-family: 'Genty Regular', 'Concert One', cursive;
+    font-size  : 28px;
+    color      : whitesmoke;
+}
+
+div.logo img {
+    width: 62px;
+}
+
+/* TODO: I need to find a JS way to keep this animation. */
+
+div.logo:hover img {
+    animation-name    : halfSpin;
+    animation-duration: 800ms;
+}
+
+/* Navbar Styling */
+
+nav ul {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 34px;
+    font-size      : 22px;
+    color          : whitesmoke;
+}
+
+nav ul li {
+    transition: all 60ms linear;
+}
+
+nav ul li:hover:not(li.dropdown) {
+    border-bottom: 2px solid whitesmoke;
+}
+
+nav ul a {
+    text-decoration: none;
+    color          : whitesmoke;
+}
+
+/* History Dropdown */
+
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li.dropdown .fa-caret-left {
+    transition: all 60ms linear;
+}
+
+nav ul li.dropdown:hover .fa-caret-left {
+    transform: rotate(-90deg);
+}
+
+nav ul li.dropdown div {
+    background-color: #454545;
+    display         : none;
+    position        : absolute;
+    margin-top      : 2px;
+    right           : 0px;
+}
+
+nav ul li.dropdown:hover div {
+    display       : flex;
+    flex-direction: column;
+    gap           : 0px;
+    z-index       : 2;
+}
+
+nav ul li.dropdown div a {
+    width    : 240px;
+    padding  : 12px 24px;
+    font-size: 18px;
+}
+
+nav ul li.dropdown div a {
+    transition: all 80ms linear;
+}
+
+nav ul li.dropdown div a:hover {
+    background-color: black;
+}

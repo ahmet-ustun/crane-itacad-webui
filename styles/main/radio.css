@@ -1,0 +1,16 @@
+@import url(side/root.css);
+@import url(side/header.css);
+@import url(side/banner.css);
+@import url(side/footer.css);
+
+/* Radio Section */
+
+section.radio {
+    padding: 96px 256px;
+    height: 76vh;
+}
+
+section.radio iframe {
+    width: 100%;
+    height: 100%;
+}
