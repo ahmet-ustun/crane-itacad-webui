@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crane | About</title>
-    <link rel="stylesheet" href="styles/misc/reset.css">
-    <link rel="stylesheet" href="styles/main/about.css">
+    <title>Crane | Radio</title>
+    <link rel="stylesheet" href="../styles/misc/reset.css">
+    <link rel="stylesheet" href="../styles/main/radio.css">
     <script src="https://kit.fontawesome.com/858d0dd405.js" crossorigin="anonymous"></script>
 </head>
 
@@ -62,38 +62,28 @@
             <iframe
                 src="https://www.youtube.com/embed/NTs4GAl6hug?start=60&autoplay=1&mute=1&playlist=NTs4GAl6hug&loop=1"></iframe>
         </section>
-        <section class="about">
-            <div class="upper">
+        <section class="radio">
+            <form action="mailto:ahmetustunt@gmail.com" method="get" enctype="text/plain">
                 <div>
-                    <img src="assets/images/profile.jpg" alt="Ahmet Ustun Picture">
-                    <i class="fas fa-hand-spock"></i>
+                  <label for="name">Name:
+                    <input type="text" name="name" id="name" />
+                  </label>
                 </div>
                 <div>
-                    <p>
-                        Hello there!
-                    </p>
-                    <br>
-                    <p>
-                        I am Ahmet and you are in one of my personal projects. I would describe myself as a web development enthusiast who wants to learn and code different things even though it is an endless journey.
-                    </p>
+                  <label for="email">Email:
+                    <input type="text" name="email" id="email" />
+                  </label>
                 </div>
-            </div>
-            <div class="lower">
-                <p>
-                    "Crane" is dedicated to Anatolian Rock of which you are already aware if you have checked the History section. In order to get information and song samples, I have dug up some resources:
-                </p>
-                <ul>
-                    <li>
-                        <a href="https://en.wikipedia.org/wiki/Anatolian_rock" target="_blank" rel="noopener noreferrer">Anatolian Rock - Wikipedia</a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/c/AnatolianRockRevivalProject" target="_blank" rel="noopener noreferrer">Anatolian Rock Revival Project - YouTube</a>
-                    </li>
-                    <li>
-                        <a href="https://open.spotify.com/playlist/5IP2uCRmPcRqFfBKsbolbb?si=970411bd39494d97" target="_blank" rel="noopener noreferrer">Anatolian Rock Revival Project - Spotify</a>
-                    </li>
-                </ul>
-            </div>
+                <div>
+                  <label>Comments:</label>
+                  <br />
+                  <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+                </div>
+                <div>
+                  <input type="submit" name="submit" value="Send" />
+                  <input type="reset" name="reset" value="Clear Form" />
+                </div>
+              </form>
         </section>
     </main>
     <footer>
