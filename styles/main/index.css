@@ -20,7 +20,7 @@ section.information article {
 @media screen and (max-device-width: 600px) {
     section.information {
         flex-direction: column;
-        gap: 34px;
+        gap           : 34px;
     }
 
     section.information article {

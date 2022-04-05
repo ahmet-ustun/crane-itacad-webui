@@ -86,7 +86,7 @@ section.about div.lower ul a:hover {
     }
 
     section.about div.lower ul {
-        margin-top: 24px;
+        margin: 24px auto 18px;
     }
 
     section.about div.lower li {

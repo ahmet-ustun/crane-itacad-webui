@@ -109,9 +109,9 @@ footer div.toggle input:checked+label div.ball {
 
 @media screen and (max-device-width: 600px) {
     footer {
-        display: grid;
+        display              : grid;
         grid-template-columns: 1fr 2fr;
-        gap: 34px;
+        gap                  : 34px;
     }
 
     footer div.social {
@@ -121,9 +121,9 @@ footer div.toggle input:checked+label div.ball {
 
 @media screen and (max-device-width: 360px) {
     footer {
-        display: flex;
+        display       : flex;
         flex-direction: column;
-        gap: 24px
+        gap           : 24px
     }
 
     footer div.social p {

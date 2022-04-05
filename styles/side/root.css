@@ -140,6 +140,6 @@ span.artist:hover::after {
 	html {
 		--padding-horz: 24px;
 		--padding-side: 24px;
-		font-size: 1em;
+		font-size     : 1em;
 	}
 }

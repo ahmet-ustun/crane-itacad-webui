@@ -135,7 +135,7 @@ nav ul li.dropdown div a:hover {
         z-index              : 2;
     }
 
-    nav ul li.dropdown a{
+    nav ul li.dropdown a {
         text-align: center;
     }
 }
@@ -159,7 +159,7 @@ nav ul li.dropdown div a:hover {
     }
 
     nav ul li.dropdown div a {
-        padding: 6px 0;
+        padding  : 6px 0;
         width    : 100%;
         font-size: 18px;
     }
