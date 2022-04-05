@@ -6,7 +6,7 @@
 /* History Section */
 
 section.history {
-    padding: 96px 256px;
+    padding: var(--padding-horz) var(--padding-side);
 }
 
 section.history article {
@@ -17,4 +17,15 @@ section.history article {
 
 section.history article h1 {
     font-size: 1.6em;
+}
+
+@media screen and (max-device-width: 360px) {
+    section.history article h1 {
+        font-size : 1.4em;
+        text-align: center;
+    }
+
+    section.history article {
+        gap: 18px;
+    }
 }

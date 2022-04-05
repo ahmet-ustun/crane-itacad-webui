@@ -6,7 +6,7 @@
 /* Info Section */
 
 section.information {
-    padding: 96px 256px;
+    padding: var(--padding-horz) var(--padding-side);
     display: flex;
     gap    : 96px;
 }
@@ -15,4 +15,25 @@ section.information article {
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
+}
+
+@media screen and (max-device-width: 600px) {
+    section.information {
+        flex-direction: column;
+        gap: 34px;
+    }
+
+    section.information article {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-device-width: 360px) {
+    section.information {
+        gap: 24px;
+    }
+
+    section.information article {
+        gap: 20px;
+    }
 }

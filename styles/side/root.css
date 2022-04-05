@@ -64,8 +64,10 @@
 /* Root Values */
 
 html {
-	font-family: 'Concert One', cursive;
-	font-size  : 1.4em;
+	font-family   : 'Concert One', cursive;
+	font-size     : 1.4em;
+	--padding-horz: 96px;
+	--padding-side: 256px;
 }
 
 html[data-theme="light"] {
@@ -119,4 +121,25 @@ span.artist::after {
 span.artist:hover::after {
 	bottom: 0px;
 	height: 100%;
+}
+
+@media screen and (max-device-width: 1280px) {
+	html {
+		--padding-side: 120px;
+	}
+}
+
+@media screen and (max-device-width: 600px) {
+	html {
+		--padding-horz: 52px;
+		--padding-side: 60px;
+	}
+}
+
+@media screen and (max-device-width: 360px) {
+	html {
+		--padding-horz: 24px;
+		--padding-side: 24px;
+		font-size: 1em;
+	}
 }

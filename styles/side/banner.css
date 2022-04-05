@@ -9,7 +9,7 @@ section.kaleidoscope {
 
 section.kaleidoscope iframe {
     position : absolute;
-    width    : 100%;
+    width    : 200%;
     height   : 400%;
     top      : 50%;
     left     : 50%;
@@ -23,4 +23,17 @@ section.kaleidoscope div.overlay {
     width           : 100%;
     height          : 100%;
     z-index         : 1;
+}
+
+@media screen and (max-device-width: 600px) {
+    section.kaleidoscope {
+        margin-top: 80px;
+        height    : 40vh;
+    }
+}
+
+@media screen and (max-device-width: 360px) {
+    section.kaleidoscope {
+        margin-top: 116px;
+    }
 }

@@ -6,11 +6,17 @@
 /* Radio Section */
 
 section.radio {
-    padding: 96px 256px;
+    padding: var(--padding-horz) var(--padding-side);
     height: 76vh;
 }
 
 section.radio iframe {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-device-width: 600px) {
+    section.radio {
+        height: 40vh;
+    }
 }
