@@ -29,11 +29,10 @@ div.logo img {
     width: 62px;
 }
 
-/* TODO: I need to find a JS way to keep this animation. */
-
 div.logo:hover img {
     animation-name    : halfSpin;
     animation-duration: 800ms;
+    animation-delay   : 400ms;
 }
 
 /* Navbar Styling */
