@@ -1,0 +1,21 @@
+@import url(../side/root.css);
+@import url(../side/header.css);
+@import url(../side/banner.css);
+@import url(../side/footer.css);
+
+/* Thanks Section */
+
+section.thanks {
+    padding: var(--padding-horz) var(--padding-side);
+    font-size: 1.2em;
+}
+
+section.thanks p {
+    text-align: center;
+}
+
+@media screen and (max-device-width: 600px) {
+    section.thanks {
+        font-size: 1em;
+    }
+}

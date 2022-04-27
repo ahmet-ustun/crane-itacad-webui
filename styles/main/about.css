@@ -9,10 +9,14 @@ section.about {
     padding: var(--padding-horz) var(--padding-side);
 }
 
-section.about div.upper {
+section.about div.upper,
+section.about div.email {
     display    : flex;
     align-items: center;
-    gap        : 64px;
+}
+
+section.about div.upper {
+    gap: 64px;
 }
 
 section.about div.upper div:first-child {
@@ -62,6 +66,53 @@ section.about div.lower ul a:hover {
     border-bottom: 2px solid #0e7e4f;
 }
 
+section.about div.email {
+    flex-direction: column;
+    gap           : 24px;
+}
+
+section.about div.email h3 {
+    font-size: 1.4em;
+}
+
+section.about div.email div {
+    display        : flex;
+    flex-direction : column;
+    gap            : 18px;
+    margin-top     : 18px;
+    justify-content: center;
+    align-items    : center;
+}
+
+section.about div.email input,
+section.about div.email textarea,
+section.about div.email button {
+    font-family  : 'Concert One', cursive;
+    border-radius: 8px;
+}
+
+section.about div.email input,
+section.about div.email textarea {
+    padding  : 8px;
+    width    : 240%;
+    font-size: 0.8em;
+    border   : 4px solid #0e7e4f;
+}
+
+section.about div.email button {
+    position  : relative;
+    padding   : 8px 24px;
+    font-size : 1em;
+    border    : none;
+    background: #0e7e4f;
+    color     : whitesmoke;
+    cursor    : pointer;
+}
+
+section.about div.email button:hover {
+    top: 4px;
+}
+
 @media screen and (max-device-width: 600px) {
     section.about div.upper div:first-child {
         display: none;
@@ -78,6 +129,11 @@ section.about div.lower ul a:hover {
     section.about div.lower li {
         margin: 32px 24px 0;
     }
+
+    section.about div.email input,
+    section.about div.email textarea {
+        width: 200%;
+    }
 }
 
 @media screen and (max-device-width: 360px) {
@@ -91,5 +147,18 @@ section.about div.lower ul a:hover {
 
     section.about div.lower li {
         margin: 24px 18px 0;
+    }
+
+    section.about div.email {
+        gap: 0;
+    }
+
+    section.about div.email div:nth-child(3) {
+        display: none;
+    }
+
+    section.about div.email input,
+    section.about div.email textarea {
+        width: 180%;
     }
 }
