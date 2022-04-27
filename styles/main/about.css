@@ -85,8 +85,7 @@ section.about div.email div {
 }
 
 section.about div.email input,
-section.about div.email textarea,
-section.about div.email button {
+section.about div.email textarea {
     font-family  : 'Concert One', cursive;
     border-radius: 8px;
 }
@@ -100,17 +99,28 @@ section.about div.email textarea {
 }
 
 section.about div.email button {
-    position  : relative;
-    padding   : 8px 24px;
-    font-size : 1em;
-    border    : none;
-    background: #0e7e4f;
-    color     : whitesmoke;
-    cursor    : pointer;
+    position     : relative;
+    padding      : 8px 24px;
+    font-family  : 'Concert One', cursive;
+    font-size    : 1em;
+    border       : none;
+    border-radius: 6px;
+    background   : #0e7e4f;
+    color        : whitesmoke;
+    cursor       : pointer;
 }
 
 section.about div.email button:hover {
     top: 4px;
+}
+
+section.about div.email button[disabled="disabled"] {
+    opacity: 0.8;
+    cursor : not-allowed;
+}
+
+section.about div.email button[disabled="disabled"]:hover {
+    top: 0px;
 }
 
 @media screen and (max-device-width: 600px) {
