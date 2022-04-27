@@ -123,6 +123,17 @@ span.artist:hover::after {
 	height: 100%;
 }
 
+.progress {
+	position  : fixed;
+	top       : 0;
+	left      : 0;
+	height    : 6px;
+	background: #0e7e4f;
+	transition: all linear 100ms;
+	min-width : 1%;
+	z-index   : 12;
+}
+
 @media screen and (max-device-width: 1280px) {
 	html {
 		--padding-side: 120px;
