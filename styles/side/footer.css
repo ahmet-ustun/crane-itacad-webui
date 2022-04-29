@@ -64,11 +64,18 @@ footer div.social p {
     text-align: center;
 }
 
+/* Toggle Control */
+
+footer div.toggle-control {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
 /* Dark Theme Toggle */
 
 footer div.toggle {
-    position  : relative;
-    align-self: center;
+    position: relative;
 }
 
 footer div.toggle input {
@@ -105,6 +112,29 @@ footer div.toggle div.ball {
 
 footer div.toggle input:checked+label div.ball {
     transform: translateX(28px);
+}
+
+/* Banner Toggle */
+
+footer div.banner-toggle {
+    font-size  : 1.2em;
+    flex-basis : fit-content;
+    display    : flex;
+    align-items: center;
+    gap        : 6px;
+}
+
+footer div.banner-toggle input {
+    transform: scale(1.6);
+}
+
+footer div.banner-toggle label:hover {
+    color : #454545;
+    cursor: pointer;
+}
+
+footer div.banner-toggle input:checked+label {
+    color: #454545;
 }
 
 @media screen and (max-device-width: 600px) {
