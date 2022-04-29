@@ -62,8 +62,9 @@
     <main>
         <section class="kaleidoscope">
             <div class="overlay"></div>
-            <iframe
-                src="https://www.youtube.com/embed/NTs4GAl6hug?start=60&autoplay=1&mute=1&playlist=NTs4GAl6hug&loop=1"></iframe>
+            <iframe id="player"
+                src="https://www.youtube.com/embed/NTs4GAl6hug?start=60&autoplay=1&mute=1&playlist=NTs4GAl6hug&loop=1&enablejsapi=1">
+            </iframe>
         </section>
         <section class="history">
             <article>
@@ -184,6 +185,7 @@
     </footer>
     <script src="../../scripts/dark-theme/onLoadTheme.js" type="module"></script>
     <script src="../../scripts/dark-theme/toggleTheme.js" type="module"></script>
+    <script src="../../scripts/banner-video/playMobile.js"></script>
     <script src="../../scripts/miscellaneous/progressBar.js"></script>
     <script src="../../scripts/history-image/addCaption.js"></script>
     <script src="../../scripts/history-image/hoverImage.js"></script>
