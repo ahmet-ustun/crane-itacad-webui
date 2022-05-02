@@ -1,11 +1,17 @@
 import { artistDB } from "./database.js";
 
-const artistList = document.querySelectorAll('span.artist');
-const spotifyPlaylist = document.querySelector('iframe.spotify');
+const artistList = $('span.artist');
+const spotifyPlay = $('iframe.spotify');
 
-artistList.forEach(artist => {
-    artist.addEventListener('click', event => {
-        const playTime = event.target.innerText;
-        spotifyPlaylist.setAttribute('src', artistDB[playTime]);
+artistList.each(function () {
+
+    $(this).on('click', function(event) {
+        
+        const artistName = event.target.innerText;
+        
+        spotifyPlay
+            .fadeOut(700)
+            .attr('src', artistDB[artistName].link)
+            .fadeIn(700);
     });
 });
