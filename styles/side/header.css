@@ -65,40 +65,36 @@ nav ul li.dropdown {
     position: relative;
 }
 
-nav ul li.dropdown .fa-caret-left {
+nav ul li.dropdown div.slide {
+    cursor: pointer;
+}
+
+nav ul li.dropdown div.slide i {
     transition: all 60ms linear;
 }
 
-nav ul li.dropdown:hover .fa-caret-left {
-    transform: rotate(-90deg);
-}
-
-nav ul li.dropdown div {
+nav ul li.dropdown div.links {
     background-color: #454545;
     display         : none;
+    flex-direction  : column;
     position        : absolute;
     margin-top      : 2px;
     right           : 0px;
+    z-index         : 2;
+    box-shadow      : rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-nav ul li.dropdown:hover div {
-    display       : flex;
-    flex-direction: column;
-    gap           : 0px;
-    z-index       : 2;
-}
-
-nav ul li.dropdown div a {
+nav ul li.dropdown div.links a {
     width    : 240px;
     padding  : 12px 24px;
     font-size: 18px;
 }
 
-nav ul li.dropdown div a {
+nav ul li.dropdown div.links a {
     transition: all 80ms linear;
 }
 
-nav ul li.dropdown div a:hover {
+nav ul li.dropdown div.links a:hover {
     background-color: black;
 }
 
@@ -117,26 +113,9 @@ nav ul li.dropdown div a:hover {
         justify-content: space-between;
     }
 
-    nav ul li.dropdown {
-        position: static;
-    }
-
-    nav ul li.dropdown .fa-caret-left,
-    nav ul li.dropdown:hover .fa-caret-left {
-        transform: rotate(-90deg);
-    }
-
-    nav ul li.dropdown div,
-    nav ul li.dropdown:hover div {
-        display              : grid;
-        grid-template-columns: repeat(2, 1fr);
-        left                 : 0px;
-        top                  : 96%;
-        z-index              : 2;
-    }
-
-    nav ul li.dropdown a {
-        text-align: center;
+    nav ul li.dropdown div.links {
+        right: auto;
+        left : 0px;
     }
 }
 
@@ -153,14 +132,8 @@ nav ul li.dropdown div a:hover {
         font-size: 1.2em;
     }
 
-    nav ul li.dropdown div,
-    nav ul li.dropdown:hover div {
-        grid-template-columns: 1fr;
-    }
-
-    nav ul li.dropdown div a {
-        padding  : 6px 0;
-        width    : 100%;
-        font-size: 18px;
+    nav ul li.dropdown div.links a {
+        width    : 200px;
+        font-size: 0.8em;
     }
 }

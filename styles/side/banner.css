@@ -27,13 +27,6 @@ section.kaleidoscope div.overlay {
 
 @media screen and (max-device-width: 600px) {
     section.kaleidoscope {
-        margin-top: 80px;
         height    : 40vh;
-    }
-}
-
-@media screen and (max-device-width: 360px) {
-    section.kaleidoscope {
-        margin-top: 116px;
     }
 }

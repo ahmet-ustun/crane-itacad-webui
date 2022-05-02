@@ -6,7 +6,7 @@
 /* Thanks Section */
 
 section.thanks {
-    padding: var(--padding-horz) var(--padding-side);
+    padding  : var(--padding-horz) var(--padding-side);
     font-size: 1.2em;
 }
 
