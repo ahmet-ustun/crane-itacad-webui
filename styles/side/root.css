@@ -134,9 +134,35 @@ span.artist:hover::after {
 	z-index   : 12;
 }
 
+/* Scroll-Up Button */
+
+button#scroll-up {
+	display: none;
+	position     : fixed;
+	bottom       : 48px;
+	right        : 96px;
+	z-index      : 12;
+	background   : #0e7e4f;
+	color        : whitesmoke;
+	border       : none;
+	border-radius: 50%;
+	transform    : scale(2.8);
+	opacity      : 80%;
+	cursor       : pointer;
+}
+
+button#scroll-up:hover {
+	color: #454545;
+}
+
 @media screen and (max-device-width: 1280px) {
 	html {
 		--padding-side: 120px;
+	}
+
+	button#scroll-up {
+		right    : 48px;
+		transform: scale(2.8);
 	}
 }
 
@@ -145,6 +171,12 @@ span.artist:hover::after {
 		--padding-horz: 52px;
 		--padding-side: 60px;
 	}
+
+	button#scroll-up {
+		bottom   : 36px;
+		right    : 36px;
+		transform: scale(2.6);
+	}
 }
 
 @media screen and (max-device-width: 360px) {
@@ -152,5 +184,11 @@ span.artist:hover::after {
 		--padding-horz: 24px;
 		--padding-side: 24px;
 		font-size     : 1em;
+	}
+
+	button#scroll-up {
+		bottom   : 32px;
+		right    : 32px;
+		transform: scale(2.4);
 	}
 }
